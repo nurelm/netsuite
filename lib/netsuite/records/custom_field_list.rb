@@ -10,9 +10,11 @@ module NetSuite
         when Array
           attributes[:custom_field].each { |custom_field| extract_custom_field(custom_field) }
         end
-        
+
         @custom_fields_assoc = Hash.new
-        custom_fields.each { |custom_field| @custom_fields_assoc[custom_field.internal_id.to_sym] = custom_field }
+        custom_fields.each do |custom_field|
+          @custom_fields_assoc[custom_field.internal_id.to_sym] = custom_field if custom_field.internal_id
+        end
       end
 
       def custom_fields
@@ -26,7 +28,7 @@ module NetSuite
       def custom_fields_by_type(type)
         custom_fields.select { |field| field.type == "platformCore:#{type}" }
       end
-      
+
       def method_missing(sym, *args, &block)
         # read custom field if already set
         if @custom_fields_assoc.include?(sym)
@@ -97,7 +99,7 @@ module NetSuite
           # TODO seems like DateTime doesn't need the iso8601 call
           #      not sure if this is specific to my env though
 
-          custom_field_value = case 
+          custom_field_value = case
           when field_value.is_a?(Hash)
             CustomRecordRef.new(field_value)
           when field_value.is_a?(Time)
