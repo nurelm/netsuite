@@ -20,6 +20,7 @@ module NetSuite
     autoload :TranBank,       'netsuite/namespaces/tran_bank'
     autoload :TranCust,       'netsuite/namespaces/tran_cust'
     autoload :TranGeneral,    'netsuite/namespaces/tran_general'
+    autoload :TranPurch,      'netsuite/namespaces/tran_purch'
     autoload :TranSales,      'netsuite/namespaces/tran_sales'
     autoload :SetupCustom,    'netsuite/namespaces/setup_custom'
   end
@@ -110,6 +111,9 @@ module NetSuite
     autoload :PaymentMethod,              'netsuite/records/payment_method'
     autoload :PhoneCall,                  'netsuite/records/phone_call'
     autoload :PricingMatrix,              'netsuite/records/pricing_matrix'
+    autoload :PurchaseOrder,              'netsuite/records/purchase_order'
+    autoload :PurchaseOrderItem,          'netsuite/records/purchase_order_item'
+    autoload :PurchaseOrderItemList,      'netsuite/records/purchase_order_item_list'
     autoload :RecordRef,                  'netsuite/records/record_ref'
     autoload :RevRecTemplate,             'netsuite/records/rev_rec_template'
     autoload :SalesOrder,                 'netsuite/records/sales_order'
