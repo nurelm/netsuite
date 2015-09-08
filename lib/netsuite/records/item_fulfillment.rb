@@ -7,7 +7,7 @@ module NetSuite
       include Support::Actions
       include Namespaces::TranSales
 
-      actions :get, :add, :initialize, :delete, :search
+      actions :get, :add, :initialize, :delete, :search, :update
 
       fields :tran_date, :tran_id, :shipping_cost, :memo, :ship_company, :ship_attention, :ship_addr1,
         :ship_addr2, :ship_city, :ship_state, :ship_zip, :ship_phone, :ship_is_residential,
@@ -15,7 +15,7 @@ module NetSuite
 
       read_only_fields :handling_cost
 
-      record_refs :custom_form, :entity, :created_from, :ship_carrier, :ship_method, 
+      record_refs :custom_form, :entity, :created_from, :ship_carrier, :ship_method,
         :ship_address_list, :klass, :ship_country
 
       field :transaction_ship_address, ShipAddress
