@@ -99,6 +99,8 @@ module NetSuite
     autoload :ItemFulfillmentItemList,    'netsuite/records/item_fulfillment_item_list'
     autoload :ItemFulfillmentPackage,     'netsuite/records/item_fulfillment_package'
     autoload :ItemFulfillmentPackageList, 'netsuite/records/item_fulfillment_package_list'
+    autoload :ItemFulfillmentPackageUps,  'netsuite/records/item_fulfillment_package_ups'
+    autoload :ItemFulfillmentPackageUpsList, 'netsuite/records/item_fulfillment_package_ups_list'
     autoload :ItemReceipt,                'netsuite/records/item_receipt'
     autoload :ItemReceiptItem,            'netsuite/records/item_receipt_item'
     autoload :ItemReceiptItemList,        'netsuite/records/item_receipt_item_list'
