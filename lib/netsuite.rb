@@ -17,12 +17,13 @@ module NetSuite
     autoload :ListSupport,    'netsuite/namespaces/list_support'
     autoload :PlatformCommon, 'netsuite/namespaces/platform_common'
     autoload :PlatformCore,   'netsuite/namespaces/platform_core'
+    autoload :SetupCustom,    'netsuite/namespaces/setup_custom'
     autoload :TranBank,       'netsuite/namespaces/tran_bank'
     autoload :TranCust,       'netsuite/namespaces/tran_cust'
     autoload :TranGeneral,    'netsuite/namespaces/tran_general'
+    autoload :TranInvt,       'netsuite/namespaces/tran_invt'
     autoload :TranPurch,      'netsuite/namespaces/tran_purch'
     autoload :TranSales,      'netsuite/namespaces/tran_sales'
-    autoload :SetupCustom,    'netsuite/namespaces/setup_custom'
   end
 
   module Support
@@ -130,6 +131,9 @@ module NetSuite
     autoload :Task,                       'netsuite/records/task'
     autoload :Term,                       'netsuite/records/term'
     autoload :Transaction,                'netsuite/records/transaction'
+    autoload :TransferOrder,              'netsuite/records/transfer_order'
+    autoload :TransferOrderItem,          'netsuite/records/transfer_order_item'
+    autoload :TransferOrderItemList,      'netsuite/records/transfer_order_item_list'
   end
 
   def self.configure(&block)
