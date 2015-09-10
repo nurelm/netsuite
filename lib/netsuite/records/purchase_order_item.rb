@@ -6,7 +6,10 @@ module NetSuite
       include Support::Records
       include Namespaces::TranPurch
 
-      fields :amount, :description, :expected_receipt_date, :gross_amt, :is_billable, :is_closed, :match_bill_to_receipt, :line, :quantity, :quantity_available, :quantity_billed, :quantity_on_hand, :quantity_received, :serial_numbers, :rate, :tax1_amt,  :tax_rate1, :tax_rate2, :vendor_name
+      fields :amount, :description, :expected_receipt_date, :gross_amt, :is_billable,
+       :is_closed, :match_bill_to_receipt, :line, :quantity, :quantity_available,
+       :quantity_billed, :quantity_on_hand, :quantity_received, :serial_numbers,
+       :rate, :tax1_amt,  :tax_rate1, :tax_rate2, :vendor_name
 
       field :custom_field_list, CustomFieldList
 
