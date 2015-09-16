@@ -22,6 +22,7 @@ module NetSuite
           soap.namespaces['xmlns:listRel'] = "urn:relationships_#{NetSuite::Configuration.api_version}.lists.webservices.netsuite.com"
           soap.namespaces['xmlns:tranSales'] = "urn:sales_#{NetSuite::Configuration.api_version}.transactions.webservices.netsuite.com"
           soap.namespaces['xmlns:tranPurch'] = "urn:purchases_#{NetSuite::Configuration.api_version}.transactions.webservices.netsuite.com"
+          soap.namespaces['xmlns:tranInvt'] = "urn:inventory_#{NetSuite::Configuration.api_version}.transactions.webservices.netsuite.com"
 
           soap.header = auth_header
 
