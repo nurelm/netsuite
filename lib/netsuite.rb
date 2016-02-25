@@ -13,6 +13,7 @@ module NetSuite
   module Namespaces
     autoload :ActSched,       'netsuite/namespaces/act_sched'
     autoload :ListAcct,       'netsuite/namespaces/list_acct'
+    autoload :ListMkt,        'netsuite/namespaces/list_mkt'
     autoload :ListRel,        'netsuite/namespaces/list_rel'
     autoload :ListSupport,    'netsuite/namespaces/list_support'
     autoload :PlatformCommon, 'netsuite/namespaces/platform_common'
@@ -117,6 +118,7 @@ module NetSuite
     autoload :PaymentMethod,              'netsuite/records/payment_method'
     autoload :PhoneCall,                  'netsuite/records/phone_call'
     autoload :PricingMatrix,              'netsuite/records/pricing_matrix'
+    autoload :PromotionCode,              'netsuite/records/promotion_code'
     autoload :PurchaseOrder,              'netsuite/records/purchase_order'
     autoload :PurchaseOrderItem,          'netsuite/records/purchase_order_item'
     autoload :PurchaseOrderItemList,      'netsuite/records/purchase_order_item_list'
