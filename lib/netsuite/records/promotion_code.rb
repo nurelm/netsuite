@@ -12,6 +12,8 @@ module NetSuite
       fields :name, :code, :description, :rate, :start_date, :end_date, :discount_type,
        :exclude_items, :display_line_discounts, :is_inactive, :is_public, :use_type, :apply_discount_to
 
+      field :custom_field_list,        CustomFieldList
+
       record_refs :discount
 
       attr_reader :internal_id
